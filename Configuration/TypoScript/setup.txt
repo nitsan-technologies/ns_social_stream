@@ -1,0 +1,34 @@
+
+plugin.tx_nssocialstream_timeline {
+	view {
+		templateRootPaths.0 = {$plugin.tx_nssocialstream_timeline.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_nssocialstream_timeline.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_nssocialstream_timeline.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_nssocialstream_timeline.persistence.storagePid}
+	}
+	settings {
+		timelineItemWidth_default = {$plugin.tx_nssocialstream_timeline.settings.timelineItemWidth}
+
+		columnsItemWidth_default = {$plugin.tx_nssocialstream_timeline.settings.columnsItemWidth}
+
+		oneColumnItemWidth_default = {$plugin.tx_nssocialstream_timeline.settings.oneColumnItemWidth}
+	}
+}
+page.includeCSS{
+	1001 = EXT:ns_social_stream/Resources/Public/css/magnific-popup.css
+	1002 = EXT:ns_social_stream/Resources/Public/css/dpSocialTimeline.css
+}
+# add jQuery if it was turned on in the constants
+[globalVar = LIT:0 < {$plugin.tx_nssocialstream_timeline.settings.javascript.addAdditionalJQuery}]
+	page.includeJSFooter.1005 = EXT:ns_social_stream/Resources/Public/js/jquery-1.7.1.min.js
+[end]
+
+page.includeJSFooter{
+	
+    1006 = EXT:ns_social_stream/Resources/Public/js/jquery.magnific-popup.min.js
+	1007 = EXT:ns_social_stream/Resources/Public/js/jquery.isotope.min.js
+	1008 = EXT:ns_social_stream/Resources/Public/js/jquery.dpSocialTimeline.min.js
+}
+

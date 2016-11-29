@@ -1,0 +1,20 @@
+# cat=facebook/enable/30; type=string; label=LLL:EXT:ns_social_stream/Resources/Private/Language/locallang_db.xlf:extmng.facebookAppId
+facebookAppId = 
+
+# cat=facebook/enable/31; type=string; label=LLL:EXT:ns_social_stream/Resources/Private/Language/locallang_db.xlf:extmng.facebookSecretKey
+facebookSecretKey = 
+
+
+# cat=twitter/enable/30; type=string; label=LLL:EXT:ns_social_stream/Resources/Private/Language/locallang_db.xlf:extmng.oauthAccessToken
+oauthAccessToken = 
+
+# cat=twitter/enable/31; type=string; label=LLL:EXT:ns_social_stream/Resources/Private/Language/locallang_db.xlf:extmng.oauthAccessTokenSecret
+oauthAccessTokenSecret = 
+
+# cat=twitter/enable/30; type=string; label=LLL:EXT:ns_social_stream/Resources/Private/Language/locallang_db.xlf:extmng.consumerKey
+consumerKey =
+
+# cat=twitter/enable/30; type=string; label=LLL:EXT:ns_social_stream/Resources/Private/Language/locallang_db.xlf:extmng.consumerSecret
+consumerSecret = 
+
+

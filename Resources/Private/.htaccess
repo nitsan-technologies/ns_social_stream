@@ -1,0 +1,15 @@
+# Apache < 2.3
+<IfModule !mod_authz_core.c>
+	Order allow,deny
+	allow from all
+	Satisfy All
+</IfModule>
+
+# Apache >= 2.3
+<IfModule mod_authz_core.c>
+	Require all granted
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteRule (?:typo3conf/ext/ns_social_stream/Resources/Private/PHP/) - [F]
+</IfModule>

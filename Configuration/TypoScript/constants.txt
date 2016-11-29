@@ -1,0 +1,29 @@
+
+plugin.tx_nssocialstream_timeline {
+	view {
+		# cat=plugin.tx_nssocialstream_timeline/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ns_social_stream/Resources/Private/Templates/
+		# cat=plugin.tx_nssocialstream_timeline/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ns_social_stream/Resources/Private/Partials/
+		# cat=plugin.tx_nssocialstream_timeline/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ns_social_stream/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_nssocialstream_timeline//a; type=string; label=Default storage PID
+		storagePid =
+	}
+	settings{
+		javascript {
+			# cat=plugin.tx_nssocialstream_timeline//1010; type=boolean; label= Include additional JQuery: Add additional JQuery (jquery-1.7.1.min.js)
+			addAdditionalJQuery = 1
+		}
+		# cat=plugin.tx_nssocialstream_timeline//1011; type=string; label= Timeline Item Width
+		timelineItemWidth = 360
+
+		# cat=plugin.tx_nssocialstream_timeline//1012; type=string; label= Columns Item Width
+		columnsItemWidth = 275
+
+		# cat=plugin.tx_nssocialstream_timeline//1013; type=string; label= OneColumn Item Width
+		oneColumnItemWidth = 98
+	}
+}
